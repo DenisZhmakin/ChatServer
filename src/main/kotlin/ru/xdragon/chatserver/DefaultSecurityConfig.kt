@@ -16,8 +16,6 @@ import org.springframework.security.web.SecurityFilterChain
 @Configuration
 @EnableWebSecurity
 class DefaultSecurityConfig {
-    lateinit var passwordEncoder: BCryptPasswordEncoder
-
     @Bean
     fun securityFilterChain(http: HttpSecurity): SecurityFilterChain {
         http.authorizeHttpRequests {
@@ -31,7 +29,7 @@ class DefaultSecurityConfig {
     fun userDetailsService(): UserDetailsService {
         val admin = User.builder()
             .username("admin")
-            .password(passwordEncoder.encode("admin"))
+            .password(BCryptPasswordEncoder().encode("admin"))
             .roles("USER", "ADMIN")
             .build()
 
