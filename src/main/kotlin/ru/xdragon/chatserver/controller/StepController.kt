@@ -25,6 +25,7 @@ class StepController {
 
     @PostMapping
     fun addStep(@RequestBody step: Step) {
+        println(step)
         repository.save(step)
     }
 

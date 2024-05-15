@@ -11,7 +11,6 @@ import java.io.Serializable
 @Entity
 data class Step(
     @Id
-    @JsonProperty("id")
     @GeneratedValue
     val id: Long,
     @JsonProperty("number")
