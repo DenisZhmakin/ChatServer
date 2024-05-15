@@ -2,13 +2,13 @@ package ru.xdragon.chatserver.controller
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
-import ru.xdragon.chatserver.model.Step
+import ru.xdragon.chatserver.entity.Step
 
 import ru.xdragon.chatserver.repository.StepRepository
 import java.util.*
 
 @RestController
-@RequestMapping("/steps")
+@RequestMapping("/step")
 class StepController {
     @Autowired
     private lateinit var repository: StepRepository
@@ -25,7 +25,6 @@ class StepController {
 
     @PostMapping
     fun addStep(@RequestBody step: Step) {
-        println(step)
         repository.save(step)
     }
 

@@ -1,7 +1,6 @@
 package ru.xdragon.chatserver.repository
 
 import org.springframework.data.jpa.repository.JpaRepository
+import ru.xdragon.chatserver.entity.Document
 
-import ru.xdragon.chatserver.entity.Step
-
-interface StepRepository: JpaRepository<Step, Long>
+interface DocumentRepository: JpaRepository<Document, Long>

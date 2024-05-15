@@ -1,10 +1,7 @@
-package ru.xdragon.chatserver.model
-
-import jakarta.persistence.Id
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
+package ru.xdragon.chatserver.entity
 
 import com.fasterxml.jackson.annotation.JsonProperty
+import jakarta.persistence.*
 
 import java.io.Serializable
 
@@ -22,5 +19,8 @@ data class Step(
     @JsonProperty("position_x")
     val positionX: Float,
     @JsonProperty("position_y")
-    val positionY: Float
+    val positionY: Float,
+    @ManyToOne(fetch=FetchType.LAZY, optional=false)
+    @JoinColumn(name="document_id", nullable=false)
+    val document: Document
 ): Serializable
