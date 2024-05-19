@@ -5,7 +5,7 @@ import jakarta.persistence.*
 import java.io.Serializable
 
 @Entity
-data class Document(
+data class DocumentEntity(
     @Id
     @GeneratedValue
     val id: Long,
