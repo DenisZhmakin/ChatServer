@@ -1,10 +1,10 @@
-package ru.xdragon.chatserver.controller
+package ru.xdragon.chatserver.deprecated.controller
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
-import ru.xdragon.chatserver.entity.DocumentEntity
-import ru.xdragon.chatserver.repository.DocumentRepository
+import ru.xdragon.chatserver.deprecated.entity.DocumentEntity
+import ru.xdragon.chatserver.deprecated.repository.DocumentRepository
 
 import java.util.*
 

@@ -1,9 +1,9 @@
-package ru.xdragon.chatserver.controller
+package ru.xdragon.chatserver.deprecated.controller
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
-import ru.xdragon.chatserver.entity.StepEntity
-import ru.xdragon.chatserver.repository.StepRepository
+import ru.xdragon.chatserver.deprecated.entity.StepEntity
+import ru.xdragon.chatserver.deprecated.repository.StepRepository
 import java.util.*
 
 @RestController

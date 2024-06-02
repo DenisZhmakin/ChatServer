@@ -1,4 +1,4 @@
-package ru.xdragon.chatserver.error
+package ru.xdragon.chatserver.deprecated.error
 
 import jakarta.validation.ConstraintViolationException
 import org.springframework.http.HttpStatus

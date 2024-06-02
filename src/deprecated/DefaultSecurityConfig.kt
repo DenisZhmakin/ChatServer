@@ -1,4 +1,4 @@
-package ru.xdragon.chatserver
+package ru.xdragon.chatserver.deprecated
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

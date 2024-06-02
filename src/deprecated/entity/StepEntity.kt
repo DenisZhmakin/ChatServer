@@ -1,4 +1,4 @@
-package ru.xdragon.chatserver.entity
+package ru.xdragon.chatserver.deprecated.entity
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import jakarta.persistence.Entity
